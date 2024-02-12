@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.navbar{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand{
+    color: green;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+nav{
+    display: flex;
+    background: white;
+}
+
+.form-control{
+    border-radius:50px;
+    width: 300px;
+    transform: translateX(-436px);
+    border: 1px solid black;
+}
+
+.btn{
+    background: cyan;
+    border-radius:0 50px 50px 0;
+    transform: translateX(-500px);
+}
+
+.navbar-profile{
+    padding-left: 50px;
+}
+
+.sidenav{
+    display: flex;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 10%;
+    border: 1px solid;
+    left: 0;
+    flex-direction:column;
+    text-align: center;
+}
+
+.sidenav a{
+    display: flex;
+    padding: 20px;
+    font-size: 1.6em;
+    font-weight: 1000;
+    justify-content: left;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-img{
+    padding-right: 20px;
+    aspect-ratio: 2;
+}
+
+.hero-section{
+    background: rgb(173, 194, 227);
+    height: 1000px;
+    width: 1285px;
+    transform: translate(235px, 15px);
+    position: absolute;
+}
+
+.hero-upper{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.cards{
+    padding: 0px 30px;
+    color: white;
+    display: flex;
+    height: 120px;
+    width: 200px;
+    border: 1px solid black;
+    justify-content: center;
+    border-radius: 25px ;
+    background: navy;
+}
+
+.card-img{  
+    font-size: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-inner{
+    padding-top: 15px;
+}
+
+.hero-lower{
+    background: white;
+    height: 100%;
+    width: 1200px;
+    margin: 45px;
+    border-radius: 40px;
+}
+
+.sidenav a:hover{
+    background: navy;
+    color: white;
+}
+
+.hero-lower-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 20px 40px;
+}
+
+.hero-lower-nav h1{
+    color: navy;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.hero-lower-btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    background: navy;
+    color: white;
+}
+
+.hero-lower-breakline{
+    width: 95%;
+    align-items: center;
+    margin: auto;
+    border-bottom: 2px solid navy;
+}
+
+.table{
+    margin: 30px;
+    text-decoration: none;
+}

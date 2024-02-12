@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <input type="text" id="name" placeholder="Enter your name here"><br>
+        <input type="number" id="ph_no" placeholder="Enter your mobile number"><br>
+        <input type="number" id="pointer" placeholder="Enter pointer of last sem"><br>
+        <button onclick="display()">Add</button>
+    </form>
+    <p id="display"></p>
+    <script>
+        const display = () => {
+            var name = document.getElementById("name").value
+            var ph_no = document.getElementById("ph_no").value
+            var pointer = document.getElementById("pointer").value 
+            var final = name +"  "+ ph_no +"  "+ pointer;
+            // document.write("name  ph_no  pointer")
+            document.write(final)
+            // document.getElementById("display").innerHTML = final
+            // document.getElementById("name").value
+            // document.getElementById("ph_no").value
+            // document.getElementById("pointer").value 
+
+        }
+    </script>
+</body>
+</html>

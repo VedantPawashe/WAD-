@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Form.css">
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">GeeksForGeeks</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAGZJREFUSEvtlrENACAMw8pnnMZpfAYTC1W3CDOEA2JhUpUW0GkQNwx+Zt6qj+ohdp7yKtVLDE6c78DiC+c4t/o46WLX8877rlzYOGGqxU/scYryB4KVCwNja9GtlhvwWpQrrQIx1Rt3TwofeC3yFwAAAABJRU5ErkJggg=="/>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
+            <button class="btn btn-outline-success" type="submit"><img class="search-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAW5JREFUSEvtlttNxEAMRb2VAJUAlQCVAJWwVAJUAlQCHCmWriYZP7SK9gdLq/1IMufesceeg50pDmfiWgd8aWb++zKz91NEZ2BA92b2OIEg4PXv2VNXRAS+MbO34oJtATMwDtTl0cy+l+0FQiDsetkR1/dcdb8FVqdAHpJ8eipIC3Fbyf8W+HMpIhbJasCdAiUt/CP2KkvRuPCLbF1JuQBwzvcEqWGnpjGC3S1HBXA3cE2qUtcj+GchoRbV3dCiZLu9EFfrKFi3KvwoUKOFGaZKwaq2WlSjBoqLdBHh0VJAWW3RcZguBZfVBuByuvaq6rQHROe4W9maqvY5HjsQlTk9ErLlmqbU7eyFsVdnY2+cYqnbSNnWdPpY3NPVfE5fDNOJNUsjMpvH9F6fOlEX8xsJVV2CZ43Cnd0FArRR6HEKnWdgdal3Lne1de8qwTvgzsBI4XuBEanwVd/eE+xw7mWrS8He4Gl6/sGdyj3p3V/QbV0fdavm6QAAAABJRU5ErkJggg=="/></button>
+            
+          </form>
+        </div>
+      </div>
+      <a class="navbar-notification" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAASFJREFUSEvtlusNwjAMhK+bwCTAJMAmMAkwCTAJjEJOoiVNkzh2IvqnllAl+vh8ZydOh5mim4kLK3gF4OB+bwBXS/JW8B3A9gskfK2Fa8EnAHunkor9IPzm/uD9oigFUx1VSsEEjs6Nh/RgCbgU2rOK4BKYlr6k7CP3RbgE9ptIy2e30/Zo5MBai2OAXareOTDX6UUrM3j+nOr0HJhQwmvCBK6pb58slxXtnkRO8QK21HqxenAt1VzWrTIsB7dOdjWvo4iBW0H9oTGBx8AcCuG8tTSW/87ksBCCW+zPqSRH+/Y/wTweDbWOWc3jy6bW2+D9ZzgspHncmP/7nBac6/jk7NUOiZTa2JxWQflhreI+GSrnCuC1+EjrK7GCq2s/G/gDqWI3H0YlXUAAAAAASUVORK5CYII="/></a>
+      <a class="navbar-profile" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAUFJREFUSEvNlmESwUAMRuMmnAQ34SQ4CU6Ck+Ak9M3smtrubrLEVGY6frTyki9fN53ISDEZiSufgqcisuquW7jOrQ20ggHuRWSRgChgGYow1dACBnaqZAW+7ooydd8CBpp2mtYBfGZp2QpmnkhsCSRXu7aCtyKysVBFZNc9x/PV+AX4EGbtAtaM1YdgMOAuYF6jq5Ys3MdcmMwFTBKLwUzGIpl1xrH6mslMpoqJWsH8D9mZ+TwkuYeZqvL2tf8ErI3PdP/vwVFefqPEaWdIfbFuK63j0jbS5OQ9xmzFudfALYdGrhCgx9LxWQJ/C42FFFdlCWxZgZrcffhgVebALZvICh+c3zkwe5fj0TPYzxynr8iBWQa42TMGXyY58MOT2Mv1tkBSsJebc7VXwUjsLXMs4u07TDu5fqR6+z52K2S0jp8qNTYfcSiZaQAAAABJRU5ErkJggg=="/></a>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="#"><img class="sidebar-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANZJREFUSEvtV8ENgzAQM5u0m8AmZbKyCd2EblJkRKsQaHxFJyWVchKv+DC+XJyjQaZoMvGiKOILAD6peESLKifGHyp+Gco/AOhX3B3ATeQ8AVxDTFzqFsBoIKaCbsURzzwVxH+UV+Ja6m8N81fNxePEY7WER1fTPNgbKdNhhTYm4kGszu/hejHELNdkkBBapuUISsskpzJ8YsL9crFMg9gdxI04m+Jfr0UXxZZGee9xvRZVY9ZBYFOhM87FQY8Dn4rk7XTGuSw5pvFWfbnLelF/Ei6K1EtmBBlUHyr3vLcAAAAASUVORK5CYII="/>Dashboard</a>
+      <a href="#"><img class="sidebar-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAPNJREFUSEvll9ENwjAMRK+bwCYwCTAJMAkwCWxCN4GclEooTdojthQV8lVFbp7PuaRuh0aja8TFFHgFYG9MrAdwza1RAhN4MUKH18/h4ZSuVQI/Q6ZU7DGoeq2CXzEwm62YDVUeY+xIYEnx/4LpyJtY2jRs93Eqvi51JXP02rLAPA6HqIEu3YQSqnOD9CrFDwDbuMI9gtU5M5jnmYO3GS8WgpU5E9jDYFWlbgZWjZSLM5VaNVIuzgxWjOQOVvf4d8CqudwVL8JcqQlNrlbNNRUn31yezR4TksHN2ltmye8uv0SWNpetE0/FfEvisaHKGs3+nd6HG2Ef9/rowAAAAABJRU5ErkJggg=="/>Articles</a>
+      <a href="#"><img class="sidebar-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAPdJREFUSEvtl9ENwjAMRK+bwCTAJmwCTAKbwChsApxUoxCa9EwtBVAtVfmo25eLL3HboVF0jbiogRcAtsLErgBOQt5LSgm8BnB2vIzwpSO/qJhQwj3hgpcU33ri4THuK3TLsxQZHg3mBCR4FJjmohmtPKPwKDBLQvhRhUeC6QWqluAe8JDhcnMN+fACYJPfmApWt90bxwO2bUUFvBhmKI55rJJ6TwJ7DhPmcqK7/qHfBCtGokBTF6a4Gbh2Zqf1t7wwxbO5SiswmyvdYs9V8hyZ/20utesoq+Bqi/yeZkOPCPZi62ajNR5reeqEiqfdV/7CqKo+yrsDc35eHxdkFz4AAAAASUVORK5CYII="/>Report</a>
+      <a href="#"><img class="sidebar-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAS1JREFUSEvtlgEOAUEMRbsnwUlwEpwEJ8FJcBKchH2bGalmzXTHJgRNhOxO+zpf25lK3mTVm7jyCngiIufw6Zx/KXhTA+eBthWRddcEuoKBAW2zhYgcvAl4wci6rAPznTLAJMBfkDQPWMuaixffZ+VPgVOyAiD4RURm9e9hV/nbwDlZkXGq5AS6T8Bb5bdgj6xU8Mrs0OP3IL8GE4wCyhkBKCBtXt970iVggCMj9SmXbXj/Mpg4BBmoQeJh9wL2gOyazwKTHa1Ea0TTFXxVz2kRWgpjvZ5osW5swbEev8ZsO/3Bf6ljbXxHcVHRHHHxSsPu2NkxbFPPcU6oXXhuj0XqAhubNmPG49O0VOmsLplaccw2J9tvg7lJPLvClEpr/e73cM9lry/oQ5zfA98A2o5uH6dI+q0AAAAASUVORK5CYII="/>Institution</a>
+      <a href="#"><img class="sidebar-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAUFJREFUSEvNlmESwUAMRuMmnAQ34SQ4CU6Ck+Ak9M3smtrubrLEVGY6frTyki9fN53ISDEZiSufgqcisuquW7jOrQ20ggHuRWSRgChgGYow1dACBnaqZAW+7ooydd8CBpp2mtYBfGZp2QpmnkhsCSRXu7aCtyKysVBFZNc9x/PV+AX4EGbtAtaM1YdgMOAuYF6jq5Ys3MdcmMwFTBKLwUzGIpl1xrH6mslMpoqJWsH8D9mZ+TwkuYeZqvL2tf8ErI3PdP/vwVFefqPEaWdIfbFuK63j0jbS5OQ9xmzFudfALYdGrhCgx9LxWQJ/C42FFFdlCWxZgZrcffhgVebALZvICh+c3zkwe5fj0TPYzxynr8iBWQa42TMGXyY58MOT2Mv1tkBSsJebc7VXwUjsLXMs4u07TDu5fqR6+z52K2S0jp8qNTYfcSiZaQAAAABJRU5ErkJggg=="/>Profile</a>
+      <a href="#"><img class="sidebar-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXpJREFUSEvNlt1xAjEMhEUnoZNQSaASQiWQSqAT6CS5b+bk8flkIfEzF73cw9lerVZaeyULxWohXMkCf4jI1kj2JiKX4R/fUGSBjx1gwADehFBF0ozPA8Bn5/C3Al9FhHJb8RJgdNyP5TuMKJS5x1YTQePdqDX7Wf8z/PxuM7U0hhHM6sN6LCOSajJUpIQF7OkYAQrJ0AJTGoDfEXR8Yd0CR9iyGd35IgHJfgX1XyujGrjV1mJ9GpvH+kcD0VBeFNYtY29zZFzCcx7pamXAmMDYi16PTPTlgJ5lWkaBPve82JKLPUVbS+OayaPAnPHblCQMHC6XUXMcD4erI2Qgz94+XnMxgsU6s+M02dww85LWpaVPWuDoRaAGwoE0lF4IXsdPxvHfWCYZR2wz6+Uzx8sYSBasXj/zgJ6B0H0Yv44Ch0T114eAPiZMx8s89mgiD9w0il6ZMsD39I9cIiWPVwJ7V+aMeBZYL37rDTZ70HndmAV+prMnexcD/gOIsVcfa/rPRwAAAABJRU5ErkJggg=="/>Settings</a>
+      <a href="#"><img class="sidebar-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZNJREFUSEvlloFNxDAMRXObwCTAJMAkwCTAJMAksAnwKrv68SWN2550QkSqTrr48uyfb18P5UzrcCZu+ZPgC1OLzy970gKurRjIXSnltpTiYIc5/PV372WUQRbswIfRgbZPEiTw2IvPgIG+hQr9YM59t70rU0NZTz14Boy0z1LJvcFaxbSUacIzYADAObQrXchCVUKdo2Sz4OTVVmHAP0WpS90dgV26bKUxQb0mnE7l01oCX5upMM/NlpLtNxiTs5B8rroH1kz3glGLNhyCcTBgX4BxZnYRr8uV4zuUm/a1Yu4TKIF7VlRRTTa3VgTHQbElgdb1fdtBmGsap63skFlHo/dhNokotfoFc3Fe19VuCGJOZa6Kt9ROPn3I8BTtVBWQGSDIPjd+Vm+LU5mrmT0Cr+RU4ermo+vKgmkxnuzojK0596+nlgHrAPD7npzZWWpMQjb/LcbsHYp8H9YeJMeLQBw+u14EvLBYydL9kxSG7CqTkVoB/jfZqk5fh4ZeWAuOVZIIT5xWw27YCx4CegH/D/wDHcFVH4PJ/Y0AAAAASUVORK5CYII="/>Logout</a>
+    </div>
+    <div class="hero-section">
+      <div class="hero-upper">
+        <div class="cards">
+          <div class="card-inner">
+            <h1>60.5K</h1>
+            <p>Active views</p>
+          </div>
+          <div class="card-img">
+            <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+            </svg>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-inner">
+            <h1>150</h1>
+            <p>Likes</p>
+          </div>
+          <div class="card-img">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+              <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-inner">
+            <h1>320</h1>
+            <p>Comments</p>
+          </div>
+          <div class="card-img">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-fill" viewBox="0 0 16 16">
+              <path d="M14 0a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-inner">
+            <h1>70</h1>
+            <p>Published</p>
+          </div>
+          <div class="card-img">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-up-fill" viewBox="0 0 16 16">
+              <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="hero-lower">
+        <div class="hero-lower-nav">
+          <h1>Recent Articles</h1>
+          <button class="hero-lower-btn">View all</button>
+        </div>
+        <div class="hero-lower-breakline"></div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Article</th>
+              <th scope="col">Views</th>
+              <th scope="col">Comment</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Article 73</td>
+              <td>2.9k</td>
+              <td>210</td>
+              <td>Published</td>
+            </tr>
+            <tr>
+              <td>Article 72</td>
+              <td>1.5k</td>
+              <td>360</td>
+              <td>Published</td>
+            </tr>
+            <tr>
+              <td>Article 71</td>
+              <td>1.1k</td>
+              <td>150</td>
+              <td>Published</td>
+            </tr>
+            <tr>
+              <td>Article 70</td>
+              <td>1.2k</td>
+              <td>420</td>
+              <td>Published</td>
+            </tr>
+            <tr>
+              <td>Article 69</td>
+              <td>2.6k</td>
+              <td>190</td>
+              <td>Published</td>
+            </tr>
+            <tr>
+              <td>Article 68</td>
+              <td>1.9k</td>
+              <td>390</td>
+              <td>Published</td>
+            </tr>
+            <tr>
+              <td>Article 67</td>
+              <td>1.2k</td>
+              <td>580</td>
+              <td>Published</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
